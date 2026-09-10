@@ -51,6 +51,10 @@ def send_telegram(message):
         timeout=30,
     )
 
+    if not response.ok:
+    print("Telegram API錯誤：", response.status_code)
+    print("Telegram回覆：", response.text)
+
     response.raise_for_status()
 
 
