@@ -52,8 +52,8 @@ def send_telegram(message):
     )
 
     if not response.ok:
-    print("Telegram API錯誤：", response.status_code)
-    print("Telegram回覆：", response.text)
+        print("Telegram API錯誤：", response.status_code)
+        print("Telegram回覆：", response.text)
 
     response.raise_for_status()
 
